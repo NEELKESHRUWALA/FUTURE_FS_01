@@ -7,7 +7,7 @@ const Achievements = () => {
         { title: 'Java Certification', org: 'Agile Infoways', date: '2023' },
         { title: 'React Certification', org: 'Agile Infoways', date: '2023' },
         { title: 'MERN Stack Certification', org: 'Simplilearn', date: '2024' },
-        { title: 'Open Source Contributor', org: 'GitHub', date: 'Ongoing' }
+        { title: 'Open Source Contributor', org: 'GitHub', date: 'Ongoing....' }
     ];
 
     return (
