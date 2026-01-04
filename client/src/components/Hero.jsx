@@ -25,62 +25,79 @@ const Hero = () => {
         >
           <div
             style={{
-              width: "280px",
-              height: "380px", // 3:4 Aspect Ratio (Passport Style)
-              borderRadius: "20px",
-              overflow: "hidden",
-              margin: "0 auto 2rem",
-              border: "4px solid var(--accent)",
-              boxShadow: "0 0 30px rgba(139, 92, 246, 0.3)",
-              animation: "float 6s ease-in-out infinite", // Removed pulse for cleaner look on rectangle
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "4rem",
+              textAlign: "left",
+              flexWrap: "wrap-reverse", // Ensure stacking on mobile
             }}
           >
-            <img
-              src={profileImg}
-              alt="Neel Keshruwala"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
+            <div style={{ flex: 1, minWidth: "300px" }}>
+              <h2
+                style={{
+                  fontSize: "1.5rem",
+                  color: "var(--accent)",
+                  marginBottom: "1rem",
+                }}
+              >
+                Hello, I'm
+              </h2>
+              <h1
+                style={{
+                  fontSize: "4rem",
+                  marginBottom: "1rem",
+                  background: "linear-gradient(to right, #fff, #a1a1aa)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  lineHeight: 1.1,
+                }}
+              >
+                Neel Keshruwala
+              </h1>
+              <h3
+                style={{
+                  fontSize: "2rem",
+                  color: "var(--text-secondary)",
+                  marginBottom: "2rem",
+                }}
+              >
+                Full Stack Web Developer
+              </h3>
+              <p
+                style={{
+                  maxWidth: "600px",
+                  color: "var(--text-secondary)",
+                  fontSize: "1.1rem",
+                  marginBottom: "2rem",
+                }}
+              >
+                I build exceptional digital experiences that differ, using the
+                MERN stack. Focused on performance, aesthetics, and user
+                experience.
+              </p>
+            </div>
+
+            <div
+              style={{
+                width: "280px",
+                height: "380px", // 3:4 Aspect Ratio
+                borderRadius: "20px",
+                overflow: "hidden",
+                border: "4px solid var(--accent)",
+                boxShadow: "0 0 30px rgba(139, 92, 246, 0.3)",
+                animation: "float 6s ease-in-out infinite",
+                flexShrink: 0,
+              }}
+            >
+              <img
+                src={profileImg}
+                alt="Neel Keshruwala"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </div>
           </div>
-          <h2
-            style={{
-              fontSize: "1.5rem",
-              color: "var(--accent)",
-              marginBottom: "1rem",
-            }}
-          >
-            Hello, I'm
-          </h2>
-          <h1
-            style={{
-              fontSize: "4rem",
-              marginBottom: "1rem",
-              background: "linear-gradient(to right, #fff, #a1a1aa)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
-            Neel Keshruwala
-          </h1>
-          <h3
-            style={{
-              fontSize: "2rem",
-              color: "var(--text-secondary)",
-              marginBottom: "2rem",
-            }}
-          >
-            Full Stack Web Developer
-          </h3>
-          <p
-            style={{
-              maxWidth: "600px",
-              margin: "0 auto 3rem",
-              color: "var(--text-secondary)",
-              fontSize: "1.1rem",
-            }}
-          >
-            I build exceptional digital experiences that differ, using the MERN
-            stack. Focused on performance, aesthetics, and user experience.
-          </p>
 
           <div
             style={{
