@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import profileImg from "../assets/profile.jpg";
-import profileImg from "../assets/profile.jpg";
 
 const Hero = () => {
   return (
