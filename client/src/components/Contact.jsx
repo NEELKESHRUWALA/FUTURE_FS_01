@@ -186,7 +186,7 @@ const Contact = () => {
                     color: "white",
                     outline: "none",
                   }}
-                  placeholder="keshruwalaneel@gmail.com"
+                  placeholder="johndoe@gmail.com"
                 />
               </div>
               <div>

@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profileImg from "../assets/profile.jpg";
 
 const About = () => {
   return (
@@ -42,45 +41,6 @@ const About = () => {
           </motion.div>
 
           {/* Placeholder for Image or Stats */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <div
-              className="glass"
-              style={{
-                padding: "1rem",
-                borderRadius: "20px",
-                width: "250px",
-                height: "250px",
-                borderRadius: "50%",
-                overflow: "hidden",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                border: "4px solid var(--accent)",
-                boxShadow: "0 0 20px rgba(139, 92, 246, 0.3)",
-              }}
-            >
-              <img
-                src={profileImg}
-                alt="Neel Keshruwala"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  borderRadius: "15px",
-                }}
-              />
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>

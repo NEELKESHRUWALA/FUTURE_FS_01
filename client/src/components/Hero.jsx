@@ -25,13 +25,14 @@ const Hero = () => {
         >
           <div
             style={{
-              width: "180px",
-              height: "180px",
-              borderRadius: "50%",
+              width: "280px",
+              height: "380px", // 3:4 Aspect Ratio (Passport Style)
+              borderRadius: "20px",
               overflow: "hidden",
               margin: "0 auto 2rem",
               border: "4px solid var(--accent)",
               boxShadow: "0 0 30px rgba(139, 92, 246, 0.3)",
+              animation: "float 6s ease-in-out infinite", // Removed pulse for cleaner look on rectangle
             }}
           >
             <img
