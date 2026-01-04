@@ -82,8 +82,8 @@ const Hero = () => {
             <div
               style={{
                 width: "280px",
-                height: "380px", // 3:4 Aspect Ratio
-                borderRadius: "20px",
+                height: "280px", // Square for perfect circle
+                borderRadius: "50%",
                 overflow: "hidden",
                 border: "4px solid var(--accent)",
                 boxShadow: "0 0 30px rgba(139, 92, 246, 0.3)",
@@ -94,7 +94,12 @@ const Hero = () => {
               <img
                 src={profileImg}
                 alt="Neel Keshruwala"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                style={{
+                  width: "100%",
+                  height: "150%",
+                  objectFit: "cover",
+                  objectPosition: "center", // Focus on face
+                }}
               />
             </div>
           </div>

@@ -46,6 +46,20 @@ html {
 body {
   font-family: var(--font-main);
   background-color: var(--bg-primary);
+  /* Pro Developer Background: Grid + Ambient Glow */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(139, 92, 246, 0.15),
+      transparent 60%
+    );
+  background-size: 50px 50px, 50px 50px, 100% 100%;
+  background-attachment: fixed;
+
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
@@ -95,6 +109,7 @@ button {
   margin-bottom: 3rem;
   background: linear-gradient(to right, #fff, #a1a1aa);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
