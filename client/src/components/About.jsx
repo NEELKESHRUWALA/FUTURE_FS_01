@@ -58,13 +58,15 @@ const About = () => {
               style={{
                 padding: "1rem",
                 borderRadius: "20px",
-                width: "100%",
-                maxWidth: "800px",
-                aspectRatio: "16/9",
+                width: "250px",
+                height: "250px",
+                borderRadius: "50%",
                 overflow: "hidden",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                border: "4px solid var(--accent)",
+                boxShadow: "0 0 20px rgba(139, 92, 246, 0.3)",
               }}
             >
               <img
